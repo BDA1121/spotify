@@ -10,7 +10,8 @@ app.get("/",function(req,res){
 
 app.get("/s",function(req,res){
 	var id1 = "5ZKMPRDHc7qElVJFh3uRqB",id2 = "0OdUWJ0sBjDrqHygGUXeCF";
-var arr = [id1];
+var arr = [];
+	arr.push(id1);
 alg(id1,arr);
 
 })
@@ -24,7 +25,7 @@ request({url:"https://api.spotify.com/v1/artists/"+id+"/related-artists",headers
 var Main = JSON.parse(body); 
 	  if(Main && Main["artists"]){
 		  console.log((Main["artists"][1]["id"]));
-	  var arrb = [];
+	  var arrb ;
        for(var i=0;i<20;i++){
         var k = 0;
 		  ;
