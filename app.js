@@ -101,7 +101,7 @@ i++;
 	for(var string = arrPath.length-1;string>=0;string--){
 		Strings = Strings +"----"+arrPath[string];
 	}
-	res.send("found"+Strings+"----"+id2);
+	res.send("found"+Strings+"----"+req.params.id2);
 })//// end of route
 
 
