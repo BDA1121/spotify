@@ -22,7 +22,7 @@ var x = 0,
 	var arrVisited = [];
 var arr = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
 arr[0][0] = req.params.id1; 
-	console.log("asssssssss");
+	//console.log("asssssssss");
 	 while(!truth){
 		if(i === 21){
     i = 1;
@@ -64,7 +64,7 @@ xs = x;
 			  }
 			  if(kx === 0){
 				  arr[ks][x] = Main["artists"][k]["id"];
-		  console.log( arr[ks][x]);
+		  //console.log( arr[ks][x]);
 					  ks ++;
 				  arrVisited.push(Main["artists"][k]["id"]);
 			  }
